@@ -1215,6 +1215,9 @@ async function prepAuditData(data, settings) {
         result.company.shortName = data.company.shortName || result.company.name
         result.company.logo = data.company.logo || "undefined"
         result.company.logo_small = data.company.logo || "undefined"
+        result.company.address = data.company.address || ""
+        result.company.postalCode = data.company.postalCode || ""
+        result.company.city = data.company.city || ""
     }
 
     result.client = {}
